@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font Awesome library -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Home">
+      <header>
+        <div class="container">
+          <ul class="main-list">
+            <li><a href="#" class="link-one active">Home</a></li>
+            <li><a href="#" class="link-one">Products</a></li>
+            <li><a href="#" class="link-one">Services</a></li>
+            <li><a href="#" class="link-one">About</a></li>
+            <li><a href="#" class="link-one sign">go to Signup</a></li>
+            <li><a href="#" class="link-one">Contact Us</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="login">
+        <div class="container">
+          <div class="section-head" id="headlog">Login</div>
+          <div class="mail">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="enter your email please"
+            />
+          </div>
+          <div class="pass">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="enter your password please"
+            />
+          </div>
+          <div class="btn1">
+            <i class="fas fa-angle-double-down fa-2x"></i>
+            <button id="login">Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="signup">
+        <div class="container">
+          <div class="section-head" id="head">Signup</div>
+          <div id="username">
+            <label for="newname">Username</label>
+            <input
+              type="text"
+              id="newname"
+              placeholder="Enter your Name please"
+            />
+          </div>
+          <div id="userage">
+            <label for="newage">Age</label>
+            <input
+              type="text"
+              id="newage"
+              placeholder="Enter your Age please"
+            />
+          </div>
+          <div class="usermail">
+            <label for="newmail">Email</label>
+            <input
+              type="email"
+              id="newmail"
+              placeholder="Enter your email please"
+            />
+          </div>
+          <div class="userphone">
+            <label for="newphone">Phone</label>
+            <input
+              type="tel"
+              id="newphone"
+              placeholder="Enter your Phone Number please"
+            />
+          </div>
+          <div class="userpass">
+            <label for="newpass">Password</label>
+            <input
+              type="password"
+              id="newpass"
+              placeholder="Enter your password please"
+            />
+          </div>
+          <div>
+            <label for="confirm">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm"
+              placeholder="Confirm password"
+            />
+          </div>
+          <div class="btn2">
+            <i class="fas fa-angle-double-down fa-2x"></i>
+            <button id="signup">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

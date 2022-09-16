@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font Awesome library -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/notes.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>User Books</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul class="main-list">
+          <li><a href="#" class="link-one active">Home</a></li>
+          <li><a href="#" class="link-one">Books</a></li>
+          <li><a href="#" class="link-one">Services</a></li>
+          <li><a href="#" class="link-one">About</a></li>
+          <li><a href="#" class="link-one">Contact Us</a></li>
+          <li><a href="#" class="link-one sign">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="overlay" id="overlay"></div>
+    <div id="add">
+      <div class="section-head">Add</div>
+      <div>
+        <div>
+          <label for="name">Book Name</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="price">Price</label>
+          <input type="text" id="price">
+        </div>
+        <button id="add-btn">Add Product</button>
+      </div>
+    </div>
+    <div id="update">
+      <div class="section-head">update</div>
+      <div>
+        <div>
+          <label for="up-name">Book Name</label>
+          <input type="text" id="up-name">
+        </div>
+        <div>
+          <label for="up-price">Price</label>
+          <input type="text" id="up-price">
+        </div>
+        <button id="update-btn">update Product</button>
+      </div>
+    </div>
+    <div id="restore">
+      <div class="section-head">Trash</div>
+      <div id="box-two">
+      </div>
+    </div>
+    <div class="home">
+      <nav>
+        <img src="./media/avatar-05.png" alt="">
+        <p id="userName">welcome</p>
+        <div>Profile</div>
+        <div id="book">Add Book</div>
+        <div id="trash">Trash</div>
+      </nav>
+      <div>
+        <div class="search">
+          <div>
+            <label for="">Search</label>
+            <input type="text" id="search">
+          </div>
+          <div>
+            <select name="" id="">
+              <option value="name" selected>By Name</option>
+              <option value="price">By price</option>
+            </select>
+          </div>
+        </div>
+        <div class="container" id="box">
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/notes.js"></script>
+  </body>
+</html>
